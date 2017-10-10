@@ -59,12 +59,20 @@ class TwAnalyse(multiprocessing.Process):
         friends_growth_rate = 100 * ((self.new_friends_count - self.old_friends_count) \
                                 / self.old_friends_count)
 
+        # for i in self.new_followers:
+        #     i._json['interest'] = self.predict_client.predict_interest(payload=i._json['description'])[i._json['description']]
+        #     self.analysed_data['followers'].append(i._json)
+
+        # for i in self.new_friends: 
+        #     i._json['interest'] =  self.predict_client.predict_interest(payload=i._json['description'])[i._json['description']]
+        #     self.analysed_data['friends'].append(i._json)
+
         for i in self.new_followers:
-            i._json['interest'] = self.client.predict_interest(payload=i._json['description'])[i._json['description']]
+            i._json['interest'] = 'Technology'
             self.analysed_data['followers'].append(i._json)
 
         for i in self.new_friends: 
-            i._json['interest'] =  self.client.predict_interest(payload=i._json['description'])[i._json['description']]
+            i._json['interest'] =  'Technology'
             self.analysed_data['friends'].append(i._json)
 
         self.analysed_data['followers_growth_rate'] = followers_growth_rate
@@ -77,8 +85,8 @@ class TwAnalyse(multiprocessing.Process):
         coll = self.db['user']
         ts_key = 'tw_analytics.' + timestamp
         coll.update({'_id': self.id}, {'$set' : {ts_key: self.analysed_data}}, upsert=True)
-        coll.update({'_id': self.id}, {'$set' : {'twitter.followers': self.new_followers_count, \
-                                                'twitter.friends': self.new_friends_count }})
+        coll.update({'_id': self.id}, {'$set' : {'twitter.followers_count': self.new_followers_count, \
+                                                'twitter.friends_count': self.new_friends_count }})
         print("{} | Saving Data | {}".format(datetime.strftime(datetime.utcnow(), "%Y-%m-%d %H:%M:%S"), 
                                                 self.screen_name))
         print("{} | Time Taken | {}".format(datetime.strftime(datetime.utcnow(), "%Y-%m-%d %H:%M:%S"), 
