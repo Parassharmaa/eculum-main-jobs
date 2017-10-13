@@ -10,7 +10,7 @@ client = pymongo.MongoClient(os.environ['DB_STRING'], connect=False)
 db = client.get_database()
 sched = BlockingScheduler()
 
-@sched.scheduled_job('cron', day_of_week='mon-sun', hour=5)
+@sched.scheduled_job('cron', day_of_week='mon-sun', hour=0)
 def job():
 	print('[{}] Running Job'.format(datetime.strftime(datetime.utcnow(), "%Y-%m-%d %H:%M:%S")))
 
