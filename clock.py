@@ -5,7 +5,7 @@ from datetime import datetime
 import os
 from apscheduler.schedulers.blocking import BlockingScheduler
 
-print('---Starting Scheduler---')
+print('[{}] Starting Scheduler'.format(datetime.strftime(datetime.utcnow(), "%Y-%m-%d %H:%M:%S")))
 client = pymongo.MongoClient(os.environ['DB_STRING'], connect=False)
 db = client.get_database()
 sched = BlockingScheduler()
