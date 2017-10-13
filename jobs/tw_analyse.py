@@ -20,10 +20,10 @@ class TwAnalyse(multiprocessing.Process):
         self.auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
         self.auth.set_access_token(self.access_token, self.access_token_secret)
 
-        client = pymongo.MongoClient(connect=False)
-        self.db = client.get_database("eculum")
+        client = pymongo.MongoClient(os.environ['DB_STRING'], connect=False)
+        self.db = client.get_database()
 
-        self.predict_client = firefly.Client(PREDICT_URL)
+        self.predict_client = firefly.Client(PREDICT_URL, auth_token='cortexai')
 
         print("{} | Starting Fetch | {}".format(datetime.strftime(datetime.utcnow(), "%Y-%m-%d %H:%M:%S"), 
                                             self.screen_name))
@@ -59,24 +59,19 @@ class TwAnalyse(multiprocessing.Process):
         friends_growth_rate = 100 * ((self.new_friends_count - self.old_friends_count) \
                                 / self.old_friends_count)
 
-        # for i in self.new_followers:
-        #     i._json['interest'] = self.predict_client.predict_interest(payload=i._json['description'])[i._json['description']]
-        #     self.analysed_data['followers'].append(i._json)
-
-        # for i in self.new_friends: 
-        #     i._json['interest'] =  self.predict_client.predict_interest(payload=i._json['description'])[i._json['description']]
-        #     self.analysed_data['friends'].append(i._json)
-
         for i in self.new_followers:
-            i._json['interest'] = 'Technology'
+            i._json['interest'] = self.predict_client.predict(payload=i._json['description'])[i._json['description']]
             self.analysed_data['followers'].append(i._json)
 
         for i in self.new_friends: 
-            i._json['interest'] =  'Technology'
+            i._json['interest'] =  self.predict_client.predict(payload=i._json['description'])[i._json['description']]
             self.analysed_data['friends'].append(i._json)
+
 
         self.analysed_data['followers_growth_rate'] = followers_growth_rate
         self.analysed_data['friends_growth_rate'] = friends_growth_rate
+        self.analysed_data['followers_count'] = self.new_followers_count
+        self.analysed_data['friends_count'] = self.new_friends_count
 
 
     def save_data(self):
@@ -85,7 +80,7 @@ class TwAnalyse(multiprocessing.Process):
         coll = self.db['user']
         ts_key = 'tw_analytics.' + timestamp
         coll.update({'_id': self.id}, {'$set' : {ts_key: self.analysed_data}}, upsert=True)
-        coll.update({'_id': self.id}, {'$set' : {'twitter.followers_count': self.new_followers_count, \
+        d = coll.update({'_id': self.id}, {'$set' : {'twitter.followers_count': self.new_followers_count, \
                                                 'twitter.friends_count': self.new_friends_count }})
         print("{} | Saving Data | {}".format(datetime.strftime(datetime.utcnow(), "%Y-%m-%d %H:%M:%S"), 
                                                 self.screen_name))

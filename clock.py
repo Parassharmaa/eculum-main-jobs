@@ -1,9 +1,10 @@
 from common.config import *
 import jobs as jobs
 import pymongo
+import os
 
-client = pymongo.MongoClient(connect=False)
-db = client.get_database("eculum")
+client = pymongo.MongoClient(os.environ['DB_STRING'], connect=False)
+db = client.get_database()
 
 coll = db['user']
 data = coll.find()
