@@ -96,7 +96,7 @@ class TwAnalyse(multiprocessing.Process):
                 self.get_new_followers()
                 self.get_new_friends()
                 self.analyse()
-                #self.save_data()
+                self.save_data()
                 self.r = 0
             except Exception as e:
                 self.save_data()
