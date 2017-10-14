@@ -60,11 +60,11 @@ class TwAnalyse(multiprocessing.Process):
                                 / self.old_friends_count)
 
         for i in self.new_followers:
-            i._json['interest'] = self.predict_client.predict(payload=i._json['description'])[i._json['description']]
+            i._json['interest'] = self.predict_client.predict(payload=[i._json['description']])[i._json['description']]
             self.analysed_data['followers'].append(i._json)
 
         for i in self.new_friends: 
-            i._json['interest'] =  self.predict_client.predict(payload=i._json['description'])[i._json['description']]
+            i._json['interest'] =  self.predict_client.predict(payload=[i._json['description']])[i._json['description']]
             self.analysed_data['friends'].append(i._json)
 
 
@@ -72,6 +72,7 @@ class TwAnalyse(multiprocessing.Process):
         self.analysed_data['friends_growth_rate'] = friends_growth_rate
         self.analysed_data['followers_count'] = self.new_followers_count
         self.analysed_data['friends_count'] = self.new_friends_count
+        print(self.analysed_data)
 
 
     def save_data(self):
@@ -95,7 +96,7 @@ class TwAnalyse(multiprocessing.Process):
                 self.get_new_followers()
                 self.get_new_friends()
                 self.analyse()
-                self.save_data()
+                #self.save_data()
                 self.r = 0
             except Exception as e:
                 self.save_data()
