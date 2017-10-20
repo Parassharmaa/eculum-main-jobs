@@ -86,7 +86,7 @@ class TwAnalyse(multiprocessing.Process):
         time_taken = round(time.time() - self.start_time, 2)
         coll = self.db['twitter_analytics']
 
-        coll.insert({'uid': self.id, timestamp: self.analysed_data})
+        coll.insert({'uid': self.id, 'timestamp': timestamp, 'data': self.analysed_data})
 
         d = coll.update({'_id': self.id}, {'$set' : {'twitter.followers_count': self.new_followers_count, \
                                                 'twitter.friends_count': self.new_friends_count }})
