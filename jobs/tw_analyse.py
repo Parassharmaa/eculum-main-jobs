@@ -78,7 +78,6 @@ class TwAnalyse(multiprocessing.Process):
         self.analysed_data['friends_growth_rate'] = friends_growth_rate
         self.analysed_data['followers_count'] = self.new_followers_count
         self.analysed_data['friends_count'] = self.new_friends_count
-        print(self.analysed_data)
 
 
     def save_data(self):
@@ -104,6 +103,4 @@ class TwAnalyse(multiprocessing.Process):
             self.save_data()
         except Exception as e:
             self.save_data()
-            print(e)
-            print("Waiting for 15 min")
-            time.sleep(900)
+            pass
