@@ -10,7 +10,6 @@ import firefly
 class TwAnalyse(multiprocessing.Process):
     def __init__(self, user_data):
         multiprocessing.Process.__init__(self)
-        self.r = 1
         self.id = user_data['_id']
         self.screen_name = user_data['twitter']['screen_name']
         self.access_token = user_data['twitter']['access_token']
@@ -60,13 +59,20 @@ class TwAnalyse(multiprocessing.Process):
                                 / self.old_friends_count)
 
         for i in self.new_followers:
-            i._json['interest'] = self.predict_client.predict(payload=[i._json['description']])[i._json['description']]
+            st = ''
+            if i._json['statuses_count'] and i._json.get('status'):
+                st = i._json['status']['text']
+            payload = i._json['description'] + st
+            i._json['interest'] = self.predict_client.predict(payload=[payload])[payload]
             self.analysed_data['followers'].append(i._json)
 
         for i in self.new_friends: 
-            i._json['interest'] =  self.predict_client.predict(payload=[i._json['description']])[i._json['description']]
+            st = ''
+            if i._json['statuses_count'] and i._json.get('status'):
+                st = i._json['status']['text']
+            payload = i._json['description'] + st
+            i._json['interest'] =  self.predict_client.predict(payload=[payload])[payload]
             self.analysed_data['friends'].append(i._json)
-
 
         self.analysed_data['followers_growth_rate'] = followers_growth_rate
         self.analysed_data['friends_growth_rate'] = friends_growth_rate
@@ -78,9 +84,10 @@ class TwAnalyse(multiprocessing.Process):
     def save_data(self):
         timestamp = datetime.strftime(datetime.utcnow(), "%Y-%m-%d")
         time_taken = round(time.time() - self.start_time, 2)
-        coll = self.db['user']
-        ts_key = 'tw_analytics.' + timestamp
-        coll.update({'_id': self.id}, {'$set' : {ts_key: self.analysed_data}}, upsert=True)
+        coll = self.db['twitter_analytics']
+
+        coll.insert({'uid': self.id, timestamp: self.analysed_data})
+
         d = coll.update({'_id': self.id}, {'$set' : {'twitter.followers_count': self.new_followers_count, \
                                                 'twitter.friends_count': self.new_friends_count }})
         print("{} | Saving Data | {}".format(datetime.strftime(datetime.utcnow(), "%Y-%m-%d %H:%M:%S"), 
@@ -90,18 +97,13 @@ class TwAnalyse(multiprocessing.Process):
 
 
     def run(self):
-        #testing
-        while self.r:
-            try:
-                self.get_new_followers()
-                self.get_new_friends()
-                self.analyse()
-                self.save_data()
-                self.r = 0
-            except Exception as e:
-                self.save_data()
-                print(e)
-                print("Waiting for 15 min")
-                time.sleep(900)
-        # under construction
-
+        try:
+            self.get_new_followers()
+            self.get_new_friends()
+            self.analyse()
+            self.save_data()
+        except Exception as e:
+            self.save_data()
+            print(e)
+            print("Waiting for 15 min")
+            time.sleep(900)
