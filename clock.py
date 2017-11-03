@@ -25,5 +25,5 @@ def job():
 	for p in proc_list:
 		p.start()
 	print('[{}] Job Finished'.format(datetime.strftime(datetime.utcnow(), "%Y-%m-%d %H:%M:%S")))
-
+job()
 sched.start()
