@@ -29,7 +29,11 @@ class TwAnalyse(multiprocessing.Process):
         try:
             self.api = tweepy.API(self.auth)
             self.me = self.api.me()
-            self.analysed_data = {"followers":[], "friends":[], "followers_growth_rate": 0, "friends_growth_rate": 0}
+            self.analysed_data = {"followers":[], "friends":[], 
+                                    "followers_growth_rate": 0, 
+                                    "friends_growth_rate": 0, 
+                                    'followers_count': 0,
+                                    'friends_count': 0}
             self.start_time = time.time()
         except Exception as e:
             print(e)
@@ -96,7 +100,7 @@ class TwAnalyse(multiprocessing.Process):
 
 
     def run(self):
-	while 1:
+        while 1:
             try:
                 self.get_new_followers()
                 self.get_new_friends()
@@ -107,4 +111,3 @@ class TwAnalyse(multiprocessing.Process):
                 print("Error:", e)
                 print("Error ocurred, waiting....")
                 time.sleep(900)
-                pass
