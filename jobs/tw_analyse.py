@@ -100,14 +100,11 @@ class TwAnalyse(multiprocessing.Process):
 
 
     def run(self):
-        while 1:
-            try:
-                self.get_new_followers()
-                self.get_new_friends()
-                self.analyse()
-                self.save_data()
-                break
-            except Exception as e:
-                print("Error:", e)
-                print("Error ocurred, waiting....")
-                time.sleep(900)
+        try:
+            self.get_new_followers()
+            self.get_new_friends()
+            self.analyse()
+            self.save_data()
+        except Exception as e:
+            print("Error:", e)
+            print("Error ocurred: ", self.screen_name)
