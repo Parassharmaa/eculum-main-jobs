@@ -2,3 +2,4 @@ pymongo
 firefly-python
 tweepy
 apscheduler
+newspaper3k
