@@ -39,7 +39,8 @@ class SuggestedArticles(Keywords, UserAuth):
 							}
 							k = self.coll.insert_one(temp_data)
 							self.articles.append(temp_data)
-					except: 
+					except Exception as e: 
+						print(e)
 						print("Continue...")
 	def save_articles(self):
 		self.coll.update({'uid': self.id}, {'$set': {'articles': self.articles}}, upsert=True)
