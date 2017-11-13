@@ -11,7 +11,7 @@ db = client.get_database()
 sched = BlockingScheduler()
 
 @sched.scheduled_job('cron', day_of_week='mon-sun', hour=0)
-def job():
+def job_analytics():
 	print('[{}] Running Job'.format(datetime.strftime(datetime.utcnow(), "%Y-%m-%d %H:%M:%S")))
 
 	coll = db['user']
@@ -26,4 +26,21 @@ def job():
 		p.start()
 	print('[{}] Job Finished'.format(datetime.strftime(datetime.utcnow(), "%Y-%m-%d %H:%M:%S")))
 
+@sched.scheduled_job('interval', hours=5)
+def job_articles():
+	print('[{}] Running Job'.format(datetime.strftime(datetime.utcnow(), "%Y-%m-%d %H:%M:%S")))
+
+	coll = db['user']
+	data = coll.find()
+
+	proc_list = []
+
+	for i in data:
+		proc_list.append(jobs.SuggestedArticles(i))
+
+	for p in proc_list:
+		p.start()
+	print('[{}] Job Finished'.format(datetime.strftime(datetime.utcnow(), "%Y-%m-%d %H:%M:%S")))
+
+job_articles()
 sched.start()

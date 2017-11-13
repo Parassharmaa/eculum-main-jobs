@@ -8,8 +8,9 @@ from jobs.tw_base import UserAuth
 from jobs.tw_words import Keywords
 from newspaper import Article
 
-class SuggestedArticles(Keywords, UserAuth):
+class SuggestedArticles(multiprocessing.Process, Keywords, UserAuth):
 	def __init__(self, user_data):
+		multiprocessing.Process.__init__(self)
 		Keywords.__init__(self, user_data, count=50)
 		UserAuth.__init__(self, user_data)
 		self.words = self.get_recent_words()
@@ -46,6 +47,7 @@ class SuggestedArticles(Keywords, UserAuth):
 								"keywords": a.keywords,
 								"summary": a.summary
 							}
+							print("{} | Saving | {}".format(self.screen_name, a.title))
 							k = self.coll.insert_one(temp_data)
 							self.articles.append(temp_data)
 					except Exception as e: 
@@ -55,4 +57,10 @@ class SuggestedArticles(Keywords, UserAuth):
 		self.coll = self.db['users_articles']
 		self.coll.update({'uid': self.id}, {'$set': {'articles': self.articles}}, upsert=True)
 
-
+	def run(self):
+		try:
+		    self.curate_articles()
+		    self.save_articles()
+		except Exception as e:
+		    print("Error:", e)
+		    print("Error ocurred: ", self.screen_name)
