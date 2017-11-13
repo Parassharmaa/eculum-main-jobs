@@ -27,7 +27,7 @@ class SuggestedArticles(Keywords, UserAuth):
 						a = Article(url)
 						a.download()
 						a.parse()
-						if a.has_top_img() and a.meta_lang == 'en':
+						if a.has_top_image() and a.meta_lang == 'en':
 							a.nlp()
 							temp_data = {
 								"url": a.canonical_link,

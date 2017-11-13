@@ -7,3 +7,4 @@ coll = db['user']
 uo = coll.find_one({})
 sa = jobs.SuggestedArticles(uo)
 sa.curate_articles()
+sa.save_articles()
