@@ -19,12 +19,11 @@ class SuggestedArticles(Keywords, UserAuth):
 
 	def is_article_url(self, url):
 		not_allowed = ['https://twitter.com', 'https://facebook.com']
-		r = True
+		if len(url.split('/')) < 4:
+			return False
 		for n in not_allowed:
 			if len(url.split('/')) > 3 and n.split('/')[2] == url.split('/')[2]:
-				r = False
-				break
-		return r
+				return False
 
 	def curate_articles(self):
 		for i in self.words:
