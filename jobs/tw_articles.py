@@ -24,6 +24,7 @@ class SuggestedArticles(Keywords, UserAuth):
 		for n in not_allowed:
 			if len(url.split('/')) > 3 and n.split('/')[2] == url.split('/')[2]:
 				return False
+		return True
 
 	def curate_articles(self):
 		for i in self.words:
