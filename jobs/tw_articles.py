@@ -17,6 +17,15 @@ class SuggestedArticles(Keywords, UserAuth):
 		self.articles = []
 		self.coll = self.db['articles']
 
+	def is_article_url(self, url):
+		not_allowed = ['twitter.com', 'https://facebook.com']
+		r = True
+		for n in not_allowed:
+			if not_allowed.split('/')[2] == url.split('/')[2]:
+				r = False
+				break
+		return r
+
 	def curate_articles(self):
 		for i in self.words:
 			for t in self.api.search(q=i[0], rpp=10, lang='en'):
@@ -27,7 +36,7 @@ class SuggestedArticles(Keywords, UserAuth):
 						a = Article(url)
 						a.download()
 						a.parse()
-						if a.has_top_image() and a.meta_lang == 'en':
+						if a.has_top_image() and a.meta_lang == 'en' and self.is_article_url(a.canonical_link):
 							a.nlp()
 							temp_data = {
 								"url": a.canonical_link,
@@ -43,6 +52,7 @@ class SuggestedArticles(Keywords, UserAuth):
 						print(e)
 						print("Continue...")
 	def save_articles(self):
+		self.coll = db['users_articles']
 		self.coll.update({'uid': self.id}, {'$set': {'articles': self.articles}}, upsert=True)
 
 
