@@ -18,10 +18,10 @@ class SuggestedArticles(Keywords, UserAuth):
 		self.coll = self.db['articles']
 
 	def is_article_url(self, url):
-		not_allowed = ['twitter.com', 'https://facebook.com']
+		not_allowed = ['https://twitter.com', 'https://facebook.com']
 		r = True
 		for n in not_allowed:
-			if n.split('/')[2] == url.split('/')[2]:
+			if len(url.split('/')) > 3 and n.split('/')[2] == url.split('/')[2]:
 				r = False
 				break
 		return r
@@ -52,7 +52,7 @@ class SuggestedArticles(Keywords, UserAuth):
 						print(e)
 						print("Continue...")
 	def save_articles(self):
-		self.coll = db['users_articles']
+		self.coll = self.db['users_articles']
 		self.coll.update({'uid': self.id}, {'$set': {'articles': self.articles}}, upsert=True)
 
 
