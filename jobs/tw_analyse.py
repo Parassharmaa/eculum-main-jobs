@@ -45,7 +45,7 @@ class TwAnalyse(multiprocessing.Process):
         if self.new_followers_count > 0:
             for page in tweepy.Cursor(self.api.followers).items(self.new_followers_count):
                 self.new_followers.append(page)
-        self.new_followers_count = self.old_followers_count + len(self.new_followers)
+        self.new_followers_count = self.me.followers_count
 
     def get_new_friends(self):
         self.new_friends_count = (self.me.friends_count - self.old_friends_count)
@@ -54,7 +54,7 @@ class TwAnalyse(multiprocessing.Process):
         if self.new_friends_count > 0:
             for page in tweepy.Cursor(self.api.friends).items(self.new_friends_count):
                 self.new_friends.append(page)
-        self.new_friends_count = self.old_friends_count + len(self.new_friends)
+        self.new_friends_count = self.me.friends_count
 
     def analyse(self):
         followers_growth_rate = 100 * ((self.new_followers_count - self.old_followers_count) \
