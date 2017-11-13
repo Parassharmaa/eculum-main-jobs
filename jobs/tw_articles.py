@@ -21,7 +21,7 @@ class SuggestedArticles(Keywords, UserAuth):
 		not_allowed = ['twitter.com', 'https://facebook.com']
 		r = True
 		for n in not_allowed:
-			if not_allowed.split('/')[2] == url.split('/')[2]:
+			if n.split('/')[2] == url.split('/')[2]:
 				r = False
 				break
 		return r
