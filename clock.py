@@ -26,7 +26,7 @@ def job_analytics():
 		p.start()
 	print('[{}] Job Finished'.format(datetime.strftime(datetime.utcnow(), "%Y-%m-%d %H:%M:%S")))
 
-@sched.scheduled_job('interval', hours=5)
+@sched.scheduled_job('interval', hours=8)
 def job_articles():
 	print('[{}] Running Job'.format(datetime.strftime(datetime.utcnow(), "%Y-%m-%d %H:%M:%S")))
 
@@ -42,5 +42,4 @@ def job_articles():
 		p.start()
 	print('[{}] Job Finished'.format(datetime.strftime(datetime.utcnow(), "%Y-%m-%d %H:%M:%S")))
 
-job_articles()
 sched.start()

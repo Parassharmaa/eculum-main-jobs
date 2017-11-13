@@ -20,7 +20,7 @@ class SuggestedArticles(multiprocessing.Process, Keywords, UserAuth):
 		self.coll = self.db['articles']
 
 	def is_article_url(self, url):
-		not_allowed = ['https://twitter.com', 'https://facebook.com']
+		not_allowed = ['https://twitter.com', 'https://facebook.com', 'https://instagram.com']
 		if len(url.split('/')) < 4:
 			return False
 		for n in not_allowed:
@@ -57,7 +57,7 @@ class SuggestedArticles(multiprocessing.Process, Keywords, UserAuth):
 	def save_articles(self):
 		self.coll = self.db['users_articles']
 		self.coll.update({'uid': self.id}, {'$set': {'articles': self.articles}}, upsert=True)
-
+		print(print("{} | Halting | All data saved".format(self.screen_name)))
 	def run(self):
 		try:
 		    self.curate_articles()
