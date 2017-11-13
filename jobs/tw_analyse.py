@@ -6,38 +6,22 @@ import pymongo
 from bson import ObjectId
 import multiprocessing
 import firefly
+from jobs.tw_base import UserAuth
 
-class TwAnalyse(multiprocessing.Process):
+class TwAnalyse(multiprocessing.Process, UserAuth):
     def __init__(self, user_data):
         multiprocessing.Process.__init__(self)
-        self.id = user_data['_id']
-        self.screen_name = user_data['twitter']['screen_name']
-        self.access_token = user_data['twitter']['access_token']
-        self.access_token_secret = user_data['twitter']['access_secret_token']
+        UserAuth.__init__(self, user_data)
         self.old_followers_count = user_data['twitter']['followers_count']
         self.old_friends_count = user_data['twitter']['friends_count']
-        self.auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
-        self.auth.set_access_token(self.access_token, self.access_token_secret)
-
-        client = pymongo.MongoClient(os.environ['DB_STRING'], connect=False)
-        self.db = client.get_database()
-
-        self.predict_client = firefly.Client(PREDICT_URL, auth_token='cortexai')
 
         print("{} | Starting Fetch | {}".format(datetime.strftime(datetime.utcnow(), "%Y-%m-%d %H:%M:%S"), 
                                             self.screen_name))
-        try:
-            self.api = tweepy.API(self.auth)
-            self.me = self.api.me()
-            self.analysed_data = {"followers":[], "friends":[], 
-                                    "followers_growth_rate": 0, 
-                                    "friends_growth_rate": 0, 
-                                    'followers_count': 0,
-                                    'friends_count': 0}
-            self.start_time = time.time()
-        except Exception as e:
-            print(e)
-
+        self.analysed_data = {"followers":[], "friends":[], 
+                            "followers_growth_rate": 0, 
+                            "friends_growth_rate": 0, 
+                            'followers_count': 0,
+                            'friends_count': 0}
 
     def get_new_followers(self):
         self.new_followers_count = (self.me.followers_count - self.old_followers_count)
@@ -67,7 +51,7 @@ class TwAnalyse(multiprocessing.Process):
             if i._json['statuses_count'] and i._json.get('status'):
                 st = i._json['status']['text']
             payload = i._json['description'] + st
-            i._json['interest'] = self.predict_client.predict(payload=[payload])[payload]
+            i._json['interest'] = self.firefly_client.predict(payload=[payload])[payload]
             self.analysed_data['followers'].append(i._json)
 
         for i in self.new_friends: 
@@ -75,7 +59,7 @@ class TwAnalyse(multiprocessing.Process):
             if i._json['statuses_count'] and i._json.get('status'):
                 st = i._json['status']['text']
             payload = i._json['description'] + st
-            i._json['interest'] =  self.predict_client.predict(payload=[payload])[payload]
+            i._json['interest'] =  self.firefly_client.predict(payload=[payload])[payload]
             self.analysed_data['friends'].append(i._json)
 
         self.analysed_data['followers_growth_rate'] = followers_growth_rate
@@ -104,7 +88,7 @@ class TwAnalyse(multiprocessing.Process):
             self.get_new_followers()
             self.get_new_friends()
             self.analyse()
-            self.save_data()
+            # self.save_data()
         except Exception as e:
             print("Error:", e)
             print("Error ocurred: ", self.screen_name)
