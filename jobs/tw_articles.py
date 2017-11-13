@@ -7,6 +7,7 @@ from collections import Counter, OrderedDict
 from jobs.tw_base import UserAuth
 from jobs.tw_words import Keywords
 from newspaper import Article
+import multiprocessing
 
 class SuggestedArticles(multiprocessing.Process, Keywords, UserAuth):
 	def __init__(self, user_data):
