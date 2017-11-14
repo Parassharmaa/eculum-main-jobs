@@ -26,12 +26,12 @@ class Keywords(UserAuth):
         return dict(w.most_common(20))
 
 
-    def get_tag_words(self):
+    def get_tag_words(self, count=50):
         es = 0
         self.htags = Counter(self.result_data['hashtags'])
         self.wtags = Counter(self.firefly_client.keyword(payload=self.result_data['tweets']))
-        w = dict(self.htags.most_common(50))
-        if len(w) < 20:
+        w = dict(self.htags.most_common(count))
+        if len(w) < count // 2:
             es = 20
         w.update(dict(self.wtags.most_common(es)))
         return w

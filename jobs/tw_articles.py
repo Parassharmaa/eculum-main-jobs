@@ -14,7 +14,7 @@ class SuggestedArticles(multiprocessing.Process, Keywords, UserAuth):
 		multiprocessing.Process.__init__(self)
 		Keywords.__init__(self, user_data, count=50)
 		UserAuth.__init__(self, user_data)
-		self.words = self.get_recent_words()
+		self.words = self.get_tag_words(count=20)
 		self.words = sorted(self.words.items(), key=lambda value: value[1], reverse=True)[:10]
 		self.articles = []
 		self.coll = self.db['articles']
