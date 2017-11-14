@@ -88,7 +88,7 @@ class TwAnalyse(multiprocessing.Process, UserAuth):
             self.get_new_followers()
             self.get_new_friends()
             self.analyse()
-            # self.save_data()
+            self.save_data()
         except Exception as e:
             print("Error:", e)
             print("Error ocurred: ", self.screen_name)
