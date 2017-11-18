@@ -1,0 +1,250 @@
+[2017-11-13 20:27:51] Starting Scheduler
+[2017-11-14 00:00:00] Running Job
+2017-11-14 00:00:00 | Starting Fetch | Eculum_ai
+2017-11-14 00:00:00 | Starting Fetch | TheSumanJha
+2017-11-14 00:00:01 | Starting Fetch | Manveer61503354
+2017-11-14 00:00:01 | Starting Fetch | paraaZz
+2017-11-14 00:00:02 | Starting Fetch | arorakanav11
+2017-11-14 00:00:02 | Starting Fetch | bansaladitya209
+2017-11-14 00:00:03 | Starting Fetch | Pareekshit16
+2017-11-14 00:00:03 | Starting Fetch | SwastikaaSharma
+2017-11-14 00:00:04 | Starting Fetch | JaskaranSingh_1
+2017-11-14 00:00:04 | Starting Fetch | seishan_
+2017-11-14 00:00:04 | Starting Fetch | Samkothari2012
+Error: Unable to connect to the server, please try again later.
+Error ocurred:  bansaladitya209
+Error: Unable to connect to the server, please try again later.
+Error ocurred:  arorakanav11
+Error: Unable to connect to the server, please try again later.
+Error ocurred:  Pareekshit16
+Error: Unable to connect to the server, please try again later.
+Error ocurred:  JaskaranSingh_1
+Error: Unable to connect to the server, please try again later.
+Error ocurred:  paraaZz
+Error: Unable to connect to the server, please try again later.
+Error ocurred:  TheSumanJha
+Error: Unable to connect to the server, please try again later.
+Error ocurred:  SwastikaaSharma
+Error: Unable to connect to the server, please try again later.
+Error ocurred:  Eculum_ai
+[2017-11-14 00:00:05] Job Finished
+[2017-11-14 04:27:51] Running Job
+Manveer61503354 | Saving | Instagram
+Manveer61503354 | Saving | FOSSASIA's Programmes for Students & Teenagers
+Manveer61503354 | Saving | Spencerport girls repeat as state soccer champions, but not the way they wanted
+Manveer61503354 | Saving | Eight Ends: The 411 on the 2017 GSOC National
+Manveer61503354 | Saving | Detect and Track Political Bots on Twitter
+Manveer61503354 | Saving | Lobster
+Manveer61503354 | Saving | I wish😪 - Amber Victor Sarzata
+Article `download()` failed with 404 Client Error: Not Found for url: https://www.facebook.com/story.php?story_fbid=1597200756985256&id=100000860417700 on URL http://fb.me/3zFxRnmjO
+
+Continue...
+Manveer61503354 | Saving | Vikram Karve
+Manveer61503354 | Saving | MAYOR-PRESIDENT BROOME ISSUES STATEMENT... - The City of Baton Rouge
+Manveer61503354 | Saving | Friends from Great Falls & the... - Lularoe with Purple Flamingo
+Manveer61503354 | Saving | Holis :3 - Manuel Pereira Maldonado
+Manveer61503354 | Halting | All data saved
+None
+arorakanav11 | Saving | FIFA 18 Ultimate Team #Fifa #gamers #NepentheZ
+arorakanav11 | Saving | Team Lakay
+arorakanav11 | Saving | Empty seats welcome Ivanka Trump for speech in Tokyo – video
+arorakanav11 | Saving | 47th World Optical Fair (Wof)
+arorakanav11 | Saving | Instagram
+arorakanav11 | Saving | Ivanka Trump, a Media Darling in Japan, Draws Light Turnout in Tokyo
+arorakanav11 | Saving | John McCain’s 1969 “Tokyo Rose” Propaganda Recording Released
+arorakanav11 | Saving | G.C.F in Tokyo (정국&지민)
+arorakanav11 | Saving | AbyssRium on the App Store
+arorakanav11 | Halting | All data saved
+None
+paraaZz | Saving | Texas Town Fires Police Dept., Hires Private Citizens For Security — Guess What Happened to Crime?
+paraaZz | Saving | FLAWLESS Foundation Routine + ACNE SCARRING Coverage
+paraaZz | Saving | Obama Foundation
+paraaZz | Saving | Antique Victorian Cut Crystal Conical Chatelaine Perfume Flask Scent Bottle Silver Plated
+paraaZz | Saving | Antique Victorian Cut Crystal Conical Chatelaine Perfume Flask Scent Bottle Silver Plated
+paraaZz | Halting | All data saved
+None
+Pareekshit16 | Saving | How to Choose the Best Protein Powder – Stupid Easy Paleo
+Pareekshit16 | Saving | Instagram
+Pareekshit16 | Saving | Samsung shows off Linux desktops on Galaxy smartmobes
+Pareekshit16 | Halting | All data saved
+None
+seishan_ | Saving | BASKETBALL AND ANIME Episode 1: PRISON BALL
+seishan_ | Saving | Everything reminds Anime characters of some type of tragic event.
+seishan_ | Saving | [The Sopranos] Alabama 3 - Woke Up This Morning - lyrics
+seishan_ | Saving | The Sculpting of the Parthenon
+seishan_ | Saving | 48% The Movie: The film that will have Leavers changing their minds
+seishan_ | Saving | Listen To Understand - Prudential Insurance ( Tugas Marketing)
+seishan_ | Saving | Still M.O.B by Oso_Smuvv
+seishan_ | Saving | Colin Kaepernick Will Not Be Silenced
+seishan_ | Saving | Melo Holic
+seishan_ | Saving | ‘Visa Lottery’ Brought in 30,000 People from Terror-Funding Nations Since 2007
+seishan_ | Halting | All data saved
+None
+Eculum_ai | Saving | 🚨 NEW LISTING ALERT! 🚨 🏡 97A Monash Ave,... - Evolution Realty with Ian Barnes
+Eculum_ai | Saving | Instagram
+Eculum_ai | Saving | 48% The Movie: The film that will have Leavers changing their minds
+Eculum_ai | Saving | Samsung shows off Linux desktops on Galaxy smartmobes
+Eculum_ai | Saving | The Big Lie of Media Matters
+Eculum_ai | Halting | All data saved
+None
+bansaladitya209 | Saving | Google’s AI guru predicts humans and machines will merge within 20 years
+bansaladitya209 | Saving | Nvidia Profile: Powering Artificial Intelligence, Augmented Reality and Virtual Reality
+bansaladitya209 | Saving | Microsoft Monday: Free Windows 10 Upgrade Fully Ending, Xbox One X Events, Sync Xbox Settings
+bansaladitya209 | Saving | A Comparative Roundup: Artificial Intelligence vs. Machine Learning vs. Deep Learning
+bansaladitya209 | Saving | A Tour of Machine Learning Algorithms
+bansaladitya209 | Saving | 5 Startups Using Machine Learning And Behavioral Biometrics To Fight Fraud
+bansaladitya209 | Saving | Android Apps on Google Play
+bansaladitya209 | Saving | 4 ways AI will prevent – not cause – an apocalypse
+bansaladitya209 | Saving | Brazilian banks lead in artificial intelligence planning
+bansaladitya209 | Saving | What Intelligent Machines Can Do, And What They Can't
+Article `download()` failed with 400 Client Error: Bad Request for url: http://govisit.azurewebsites.net/aHR0cDovL3d3dy43d2RhdGEuYmUvZXZlbnQvYWktZXhwby1nbG9iYWwtMjAxOC8=/aHR0cDovL3d3dy43d2RhdGEuYmUvd3AtY29udGVudC91cGxvYWRzLzIwMTcvMDkvYWktZ2xvYmFsLTMwMHgyNTAuanBn/ICAgQUkgRXhwbyBHbG9iYWwgMjAxOCAg/VGhlIEFJIENvbmZlcmVuY2UgJiBFeGhpYml0aW9uIHRha2luZyBwbGFjZSAxOC0xOXRoIEFwcmlsIGF0IExvbmRvbuKAmXMgT2x5bXBpYSBpcyBhIHNob3djYXNlIG9mIG5leHQgZ2VuZXJhdGlvbiB0ZWNobm9sb2dpZXMgYW5kIHN0cmF0ZWdpZXMgZnJvbSB0aGUgd29ybGQgb2YgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UsIGFu on URL http://govisit.azurewebsites.net/aHR0cDovL3d3dy43d2RhdGEuYmUvZXZlbnQvYWktZXhwby1nbG9iYWwtMjAxOC8=/aHR0cDovL3d3dy43d2RhdGEuYmUvd3AtY29udGVudC91cGxvYWRzLzIwMTcvMDkvYWktZ2xvYmFsLTMwMHgyNTAuanBn/ICAgQUkgRXhwbyBHbG9iYWwgMjAxOCAg/VGhlIEFJIENvbmZlcmVuY2UgJiBFeGhpYml0aW9uIHRha2luZyBwbGFjZSAxOC0xOXRoIEFwcmlsIGF0IExvbmRvbuKAmXMgT2x5bXBpYSBpcyBhIHNob3djYXNlIG9mIG5leHQgZ2VuZXJhdGlvbiB0ZWNobm9sb2dpZXMgYW5kIHN0cmF0ZWdpZXMgZnJvbSB0aGUgd29ybGQgb2YgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UsIGFu
+
+Continue...
+bansaladitya209 | Saving | The Future Of Work: How Artificial Intelligence Will Transform The Employee Experience
+bansaladitya209 | Saving | Nvidia Profile: Powering Artificial Intelligence, Augmented Reality and Virtual Reality
+Article `download()` failed with 400 Client Error: Bad Request for url: http://govisit.azurewebsites.net/aHR0cDovL3d3dy43d2RhdGEuYmUvZXZlbnQvYWktZXhwby1nbG9iYWwtMjAxOC8=/aHR0cDovL3d3dy43d2RhdGEuYmUvd3AtY29udGVudC91cGxvYWRzLzIwMTcvMDkvYWktZ2xvYmFsLTMwMHgyNTAuanBn/QUkgRXhwbyBHbG9iYWwgMjAxOA==/VGhlIEFJIENvbmZlcmVuY2UgJiBFeGhpYml0aW9uIHRha2luZyBwbGFjZSAxOC0xOXRoIEFwcmlsIGF0IExvbmRvbuKAmXMgT2x5bXBpYSBpcyBhIHNob3djYXNlIG9mIG5leHQgZ2VuZXJhdGlvbiB0ZWNobm9sb2dpZXMgYW5kIHN0cmF0ZWdpZXMgZnJvbSB0aGUgd29ybGQgb2YgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UsIGFu on URL http://govisit.azurewebsites.net/aHR0cDovL3d3dy43d2RhdGEuYmUvZXZlbnQvYWktZXhwby1nbG9iYWwtMjAxOC8=/aHR0cDovL3d3dy43d2RhdGEuYmUvd3AtY29udGVudC91cGxvYWRzLzIwMTcvMDkvYWktZ2xvYmFsLTMwMHgyNTAuanBn/QUkgRXhwbyBHbG9iYWwgMjAxOA==/VGhlIEFJIENvbmZlcmVuY2UgJiBFeGhpYml0aW9uIHRha2luZyBwbGFjZSAxOC0xOXRoIEFwcmlsIGF0IExvbmRvbuKAmXMgT2x5bXBpYSBpcyBhIHNob3djYXNlIG9mIG5leHQgZ2VuZXJhdGlvbiB0ZWNobm9sb2dpZXMgYW5kIHN0cmF0ZWdpZXMgZnJvbSB0aGUgd29ybGQgb2YgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UsIGFu
+
+Continue...
+Article `download()` failed with 400 Client Error: Bad Request for url: http://govisit.azurewebsites.net/aHR0cDovL3d3dy43d2RhdGEuYmUvZXZlbnQvYWktZXhwby1nbG9iYWwtMjAxOC8=/aHR0cDovL3d3dy43d2RhdGEuYmUvd3AtY29udGVudC91cGxvYWRzLzIwMTcvMDkvYWktZ2xvYmFsLTMwMHgyNTAuanBn/QUkgRXhwbyBHbG9iYWwgMjAxOCAgIA==/VGhlIEFJIENvbmZlcmVuY2UgJiBFeGhpYml0aW9uIHRha2luZyBwbGFjZSAxOC0xOXRoIEFwcmlsIGF0IExvbmRvbuKAmXMgT2x5bXBpYSBpcyBhIHNob3djYXNlIG9mIG5leHQgZ2VuZXJhdGlvbiB0ZWNobm9sb2dpZXMgYW5kIHN0cmF0ZWdpZXMgZnJvbSB0aGUgd29ybGQgb2YgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UsIGFu on URL http://govisit.azurewebsites.net/aHR0cDovL3d3dy43d2RhdGEuYmUvZXZlbnQvYWktZXhwby1nbG9iYWwtMjAxOC8=/aHR0cDovL3d3dy43d2RhdGEuYmUvd3AtY29udGVudC91cGxvYWRzLzIwMTcvMDkvYWktZ2xvYmFsLTMwMHgyNTAuanBn/QUkgRXhwbyBHbG9iYWwgMjAxOCAgIA==/VGhlIEFJIENvbmZlcmVuY2UgJiBFeGhpYml0aW9uIHRha2luZyBwbGFjZSAxOC0xOXRoIEFwcmlsIGF0IExvbmRvbuKAmXMgT2x5bXBpYSBpcyBhIHNob3djYXNlIG9mIG5leHQgZ2VuZXJhdGlvbiB0ZWNobm9sb2dpZXMgYW5kIHN0cmF0ZWdpZXMgZnJvbSB0aGUgd29ybGQgb2YgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UsIGFu
+
+Continue...
+Article `download()` failed with 400 Client Error: Bad Request for url: http://govisit.azurewebsites.net/aHR0cDovL3d3dy43d2RhdGEuYmUvZXZlbnQvYWktZXhwby1nbG9iYWwtMjAxOC8=/aHR0cDovL3d3dy43d2RhdGEuYmUvd3AtY29udGVudC91cGxvYWRzLzIwMTcvMDkvYWktZ2xvYmFsLTMwMHgyNTAuanBn/ICAgQUkgRXhwbyBHbG9iYWwgMjAxOCAg/VGhlIEFJIENvbmZlcmVuY2UgJiBFeGhpYml0aW9uIHRha2luZyBwbGFjZSAxOC0xOXRoIEFwcmlsIGF0IExvbmRvbuKAmXMgT2x5bXBpYSBpcyBhIHNob3djYXNlIG9mIG5leHQgZ2VuZXJhdGlvbiB0ZWNobm9sb2dpZXMgYW5kIHN0cmF0ZWdpZXMgZnJvbSB0aGUgd29ybGQgb2YgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UsIGFu on URL http://govisit.azurewebsites.net/aHR0cDovL3d3dy43d2RhdGEuYmUvZXZlbnQvYWktZXhwby1nbG9iYWwtMjAxOC8=/aHR0cDovL3d3dy43d2RhdGEuYmUvd3AtY29udGVudC91cGxvYWRzLzIwMTcvMDkvYWktZ2xvYmFsLTMwMHgyNTAuanBn/ICAgQUkgRXhwbyBHbG9iYWwgMjAxOCAg/VGhlIEFJIENvbmZlcmVuY2UgJiBFeGhpYml0aW9uIHRha2luZyBwbGFjZSAxOC0xOXRoIEFwcmlsIGF0IExvbmRvbuKAmXMgT2x5bXBpYSBpcyBhIHNob3djYXNlIG9mIG5leHQgZ2VuZXJhdGlvbiB0ZWNobm9sb2dpZXMgYW5kIHN0cmF0ZWdpZXMgZnJvbSB0aGUgd29ybGQgb2YgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UsIGFu
+
+Continue...
+bansaladitya209 | Saving | House Russia Investigator Wants to Interview Eric Trump, Widening Focus on President’s Family
+bansaladitya209 | Saving | How To Use Your Website To Bring In More Customers
+bansaladitya209 | Saving | Raqqa’s dirty secret
+bansaladitya209 | Saving | Data doesn’t lie: how top brands use data to spot trends, read minds, and improve products
+bansaladitya209 | Saving | Menendez jury says it's deadlocked; judge says to continue
+bansaladitya209 | Halting | All data saved
+None
+SwastikaaSharma | Saving | A smog vacuum cleaner and other magical city designs
+SwastikaaSharma | Saving | Finally! Shah Rukh Khan’s TED talks will be aired in December and here are the details
+SwastikaaSharma | Saving | Finally! Shah Rukh Khan’s TED talks will be aired in December and here are the details
+SwastikaaSharma | Saving | Finally! Shah Rukh Khan’s TED talks will be aired in December and here are the details
+SwastikaaSharma | Saving | The global food waste scandal
+SwastikaaSharma | Saving | How we can end sexual harassment at work
+SwastikaaSharma | Saving | How to solve problems, from an inventor with 200+ patents
+SwastikaaSharma | Saving | How to solve problems, from an inventor with 200+ patents
+SwastikaaSharma | Saving | Samsung shows off Linux desktops on Galaxy smartmobes
+SwastikaaSharma | Saving | Biologists Have Found Out How Long Can Microorganisms Live On Mars
+SwastikaaSharma | Saving | Biologists Have Found Out How Long Can Microorganisms Live On Mars
+SwastikaaSharma | Saving | Navigating The Genome To Cure Deafness
+SwastikaaSharma | Saving | Scientists Narrow Down The Search For Dark Photons Using Decade-Old Particle Collider Data
+SwastikaaSharma | Saving | Biologists Have Found Out How Long Can Microorganisms Live On Mars
+SwastikaaSharma | Saving | Astronomers Discover A Star That Would Not Die
+SwastikaaSharma | Saving | Biologists Have Found Out How Long Can Microorganisms Live On Mars
+SwastikaaSharma | Saving | Biologists Have Found Out How Long Can Microorganisms Live On Mars
+SwastikaaSharma | Saving | Navigating The Genome To Cure Deafness
+SwastikaaSharma | Saving | Navigating The Genome To Cure Deafness
+SwastikaaSharma | Saving | Scientist Devises A Solar Reactor To Make Water And Oxygen From Moon Rocks
+SwastikaaSharma | Saving | Navigating The Genome To Cure Deafness
+SwastikaaSharma | Saving | Inner Ear Stem Cells May Someday Restore Hearing
+SwastikaaSharma | Saving | Instagram
+SwastikaaSharma | Saving | Tesla's semi truck will 'blow your mind,' says Musk
+SwastikaaSharma | Saving | Elon Musk claims he will have 20 mile car tunnel from US-101 to LAX (along I-405) in one year
+SwastikaaSharma | Saving | Tesla’s Elon Musk Reassures Buyers Over Mannequin three Delays
+SwastikaaSharma | Saving | ‘Choose science’: Elon Musk’s post on Ataturk kicks off debate in Turkey
+SwastikaaSharma | Saving | “Some companies out there quote a start of production that is substantially in advance of when customers get their cars.”- Elon Musk
+SwastikaaSharma | Saving | Elon Musk Says the Tesla Semi Truck Will ‘Blow Your Mind Clear Out of Your Skull’
+SwastikaaSharma | Saving | Superwoman Does Exist, And She Looks A Lot Like This CEO
+SwastikaaSharma | Saving | 4 ways AI will prevent – not cause – an apocalypse
+SwastikaaSharma | Saving | Brazilian banks lead in artificial intelligence planning
+SwastikaaSharma | Saving | What Intelligent Machines Can Do, And What They Can't
+Article `download()` failed with 400 Client Error: Bad Request for url: http://govisit.azurewebsites.net/aHR0cDovL3d3dy43d2RhdGEuYmUvZXZlbnQvYWktZXhwby1nbG9iYWwtMjAxOC8=/aHR0cDovL3d3dy43d2RhdGEuYmUvd3AtY29udGVudC91cGxvYWRzLzIwMTcvMDkvYWktZ2xvYmFsLTMwMHgyNTAuanBn/ICAgQUkgRXhwbyBHbG9iYWwgMjAxOCAg/VGhlIEFJIENvbmZlcmVuY2UgJiBFeGhpYml0aW9uIHRha2luZyBwbGFjZSAxOC0xOXRoIEFwcmlsIGF0IExvbmRvbuKAmXMgT2x5bXBpYSBpcyBhIHNob3djYXNlIG9mIG5leHQgZ2VuZXJhdGlvbiB0ZWNobm9sb2dpZXMgYW5kIHN0cmF0ZWdpZXMgZnJvbSB0aGUgd29ybGQgb2YgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UsIGFu on URL http://govisit.azurewebsites.net/aHR0cDovL3d3dy43d2RhdGEuYmUvZXZlbnQvYWktZXhwby1nbG9iYWwtMjAxOC8=/aHR0cDovL3d3dy43d2RhdGEuYmUvd3AtY29udGVudC91cGxvYWRzLzIwMTcvMDkvYWktZ2xvYmFsLTMwMHgyNTAuanBn/ICAgQUkgRXhwbyBHbG9iYWwgMjAxOCAg/VGhlIEFJIENvbmZlcmVuY2UgJiBFeGhpYml0aW9uIHRha2luZyBwbGFjZSAxOC0xOXRoIEFwcmlsIGF0IExvbmRvbuKAmXMgT2x5bXBpYSBpcyBhIHNob3djYXNlIG9mIG5leHQgZ2VuZXJhdGlvbiB0ZWNobm9sb2dpZXMgYW5kIHN0cmF0ZWdpZXMgZnJvbSB0aGUgd29ybGQgb2YgQXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UsIGFu
+
+Continue...
+SwastikaaSharma | Saving | The Future Of Work: How Artificial Intelligence Will Transform The Employee Experience
+SwastikaaSharma | Saving | Nvidia Profile: Powering Artificial Intelligence, Augmented Reality and Virtual Reality
+SwastikaaSharma | Saving | Ban Killer Robots Before It’s Too Late, Experts Warn the UN
+SwastikaaSharma | Saving | SpaceX | McGregor, TX
+SwastikaaSharma | Saving | Research Shows Art Therapy Helps the Brain to Heal
+SwastikaaSharma | Saving | Detox with Chelation Therapy — Help Your Heart & Brain
+SwastikaaSharma | Halting | All data saved
+None
+TheSumanJha | Saving | Giscle Image Detection[Night]-0.01
+TheSumanJha | Saving | New Handheld Engraving Etching Hobby Craft Pen Rotary Tool for Glass Metal Wood
+TheSumanJha | Saving | Transform your inbox into task management tool using DragApp
+TheSumanJha | Saving | Space startup Xcor Aerospace fails to find a backer, files for bankruptcy
+TheSumanJha | Saving | Easy To Retire
+TheSumanJha | Saving | Victoria's startup community has raised nearly $800 million since 2012
+TheSumanJha | Saving | Missing 9-year-old found safe - MSNewsNow.com - Jackson, MS
+TheSumanJha | Saving | A Road Trip Through the Flint Hills of Kansas
+TheSumanJha | Saving | Missing 9-year-old found safe - MSNewsNow.com - Jackson, MS
+TheSumanJha | Saving | How big is the DMZ?
+TheSumanJha | Saving | Google Street View Has Reached the Tiny Faroe Islands Thanks to Sheep
+TheSumanJha | Saving | 3D Christmas mapping in Yerevan by IWorld Armenia
+TheSumanJha | Saving | Incident Alert single incident map
+TheSumanJha | Saving | Incident Alert single incident map
+TheSumanJha | Saving | Incident Alert single incident map
+You must `download()` an article first!
+
+Continue...
+TheSumanJha | Saving | Incident Alert single incident map
+TheSumanJha | Halting | All data saved
+None
+Samkothari2012 | Saving | Web Scraping with Python (Community Experience Distilled)
+Samkothari2012 | Saving | CDA – CDA
+Samkothari2012 | Saving | Right-wing news website humiliated after defending US by rewriting the history of slavery
+Samkothari2012 | Saving | Is The Ketogenic Diet The ‘Secret Weapon’ You Need To Fight Off Belly Fat?
+Samkothari2012 | Saving | Download Vidio Forno
+Samkothari2012 | Saving | 10 Questions With Shonda
+Article `download()` failed with 503 Server Error: Service Unavailable for url: https://www.currys.co.uk/gbuk/index.html?cmpid=social~twitter~a~Why%20Wait~Website~Why%20Wait%20generic~o on URL http://bit.ly/2zxCaFa
+
+Continue...
+Samkothari2012 | Saving | 5 SEO Action Items to Boost Your Website Rankings (In Only 1 Hour a Day!)
+Samkothari2012 | Saving | Yelso is a business name for sale on BrandBucket
+Samkothari2012 | Saving | TourismHOPE
+Samkothari2012 | Saving | Venezuela Declared in Default by S&P After Missing Bond Payments
+Samkothari2012 | Saving | An Open Door for Pesticide Lobbyists at the U.S.D.A.
+Samkothari2012 | Saving | Instagram
+Samkothari2012 | Saving | Big Sky Vacation Home by Len Cotsovolos and LC²Design
+Samkothari2012 | Saving | Ikea’s Incredibly Boring, Long, And Pointless Ads Are Brilliant
+Samkothari2012 | Saving | Design modern and minimal logo by Zakdesignz
+Samkothari2012 | Saving | Rooter is Inching Closer to Half a Million User Mark
+Samkothari2012 | Saving | Rooter is Inching Closer to Half a Million User Mark
+Samkothari2012 | Saving | Instagram
+Samkothari2012 | Saving | Practical Tips For Entrepreneurs Who Want to Start a Business Abroad
+Samkothari2012 | Saving | Instagram
+Samkothari2012 | Saving | Instagram
+Samkothari2012 | Saving | Learn how to market yourself by creating a personal brand
+Samkothari2012 | Saving | Why the startup community is starting to panic about tax reform
+Samkothari2012 | Saving | Why the startup community is starting to panic about tax reform
+Samkothari2012 | Saving | Drive traffic to your website by Magellon
+Samkothari2012 | Saving | Silicon Valley blasts Senate proposal to tax startup options
+Samkothari2012 | Saving | DARPA Invests $18.3 Million In Brain Implant Startup That's Building 'A Modem For The Mind'
+Samkothari2012 | Saving | Do Website Engagement Rates Impact Organic Rankings?
+Samkothari2012 | Halting | All data saved
+None
+JaskaranSingh_1 | Saving | How to Pick a Preschool
+JaskaranSingh_1 | Saving | Harvard university debate team loses to New York prison inmates
+JaskaranSingh_1 | Saving | Corey Lewandowski Doesn’t Belong At Harvard Either
+JaskaranSingh_1 | Saving | Adhan From Masjid Al-Haram (MECCA)
+JaskaranSingh_1 | Saving | Instagram
+JaskaranSingh_1 | Saving | Coconut Paneer Kofta
+JaskaranSingh_1 | Saving | Achari Paneer | No Onion No Garlic Recipe.
+JaskaranSingh_1 | Saving | Paneer Pakora Recipe.
+JaskaranSingh_1 | Saving | Paneer/Cottage Cheese Tava Masala…
+You must `download()` an article first!
+
+Continue...
+JaskaranSingh_1 | Saving | Over 5,000 Cases of Ransomware Attacks Uncovered This Year
+JaskaranSingh_1 | Saving | Why business continuity plans are key to ransomware attacks like WannaCry
+JaskaranSingh_1 | Saving | Why business continuity plans are key to ransomware attacks like WannaCry
+JaskaranSingh_1 | Saving | Why business continuity plans are key to ransomware attacks like WannaCry
+JaskaranSingh_1 | Saving | Why business continuity plans are key to ransomware attacks like WannaCry
+JaskaranSingh_1 | Saving | Microsoft says WannaCry ransomware attack is a wake-up call for governments
+JaskaranSingh_1 | Saving | The Week in Ransomware
+JaskaranSingh_1 | Saving | 
+JaskaranSingh_1 | Saving | Trump administration talks up fossil fuels at U.N. climate conference
+JaskaranSingh_1 | Saving | BEFORE I WAKE BY BTL ENTERTAINMENT, PROD BY SPADE MUSIC, MIXED BY PRECIZE BEATZ PRODUCTIONZ by PRECIZE BEATZ PRODUCTIONZ
+JaskaranSingh_1 | Halting | All data saved
+None
+Traceback (most recent call last):
+  File "clock.py", line 1, in <module>
+    from common.config import *
+  File "/root/eculum-main-jobs/common/config.py", line 4, in <module>
+    CONSUMER_KEY  = os.environ['CONSUMER_KEY']
+  File "/usr/lib/python3.5/os.py", line 725, in __getitem__
+    raise KeyError(key) from None
+KeyError: 'CONSUMER_KEY'

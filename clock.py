@@ -58,5 +58,5 @@ def job_articles():
 	pool.join()
 	print('[{}] Job Finished'.format(datetime.strftime(datetime.utcnow(), "%Y-%m-%d %H:%M:%S")))
 
-job_articles()
+
 sched.start()
